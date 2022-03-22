@@ -34,7 +34,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
+| Web1     | Webserver| 10.1.0.5   | Linux            |
 | TODO     |          |            |                  |
 | TODO     |          |            |                  |
 
