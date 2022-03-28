@@ -34,11 +34,10 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
   - Metricbeat: Metricbeat is a data shipper that I used for monitoring purposes on my webservers to detect any changes that occurred to the system metrics.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function  | IP Address | Operating System |
 |----------|-----------|------------|------------------|
-| Jump Box | Gateway   | 10.0.0.1   | Linux            |
+| Jump Box | Gateway   | 10.1.0.4   | Linux            |
 | Web1     | Webserver | 10.1.0.5   | Linux            |
 | Web2     | Webserver | 10.1.0.6   | Linux            |
 | Web3     | Webserver | 10.1.0.7   | Linux            |
@@ -52,13 +51,14 @@ Only the Jump Box machine can accept connections from the Internet. Access to th
 - Public IPv4 IP: 73.202.41.242
 
 Machines within the network can only be accessed by the Jump Box.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- I only allowed SSH access to the Jump Box from my home network machine with an IP Address of 73.202.41.242. 
+The Jump Box had authorization to SSH into the Elk Server via the private IP address of 10.1.0.4. 
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
+| Jump Box | Yes                 |    73.202.41.242     |
 |          |                     |                      |
 |          |                     |                      |
 
