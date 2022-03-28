@@ -58,19 +58,24 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 |    73.202.41.242     |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box |      Yes            |    73.202.41.242     |
+| Web1     |      No             |    10.0.0.4          |
+| Web2     |      No             |    10.1.0.4          |
+| Web3     |      No             |    10.1.0.4          |
+| Elk      |      No             |    10.1.0.4          |
 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+  
+  - The benefit of using an automation tool such as Ansible is that it excels in the efficiency and accuracy of software implementation by expediting the process to install multiple applications in mass deployment rather than individually installing applications.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+
+  - 1st: Install Docker containerization platform of choice for our project. 
+  - 2nd: Install Python3 compatible programming language used for our project.
+  - 3rd: Install the Docker Python module, Installs remaining modules needed to allow docker to work efficiently using Python.
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
