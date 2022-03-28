@@ -107,9 +107,10 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the **_Elk.yml_** file to /etc/ansible/roles/
+- Update the **_Host_** file to include the Elk server and its IP Address 10.0.0.4 then specify what we want           installed ansible_python_interpreter=/usr/bin/python3
+ 
+- Run the playbook, and navigate to HTTP://20.228.157.0:5601 to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
