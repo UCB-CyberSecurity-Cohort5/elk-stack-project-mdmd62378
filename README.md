@@ -74,7 +74,8 @@ The playbook implements the following tasks:
 
   - 1st: Install Docker containerization platform of choice for our project. 
   - 2nd: Install Python3 compatible programming language used for our project.
-  - 3rd: Install the Docker Python module, Installs remaining modules needed to allow docker to work efficiently using Python.
+  - 3rd: Install the Docker Python module, Installs remaining modules needed to allow docker to work efficiently              using Python.
+  - 4th: Download and launch a Docker Elk container, download the Elk stack into our docker container so that we may          use Kibana, Filebeat, Metricbeat.
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -83,13 +84,24 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+| Name    | IP Address   |
+|---------|--------------|
+| Web1    | 10.1.0.5     |
+| Web2    | 10.1.0.6     |
+| Web3    | 10.1.0.7     |
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+| Name | Type of Beat Installed |
+|------|------------------------|
+| Web1 | Filebeat & Metricbeat  |
+| Web2 | Filebeat & Metricbeat  |
+| Web3 | Filebeat & Metricbeat  |
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+ 
+ - Filebeat periodically monitor logs such as the Audit Logs, Server logs, and many others that are resourceful to      us. The auth.log is particularly useful because it can monitor the SSH logs so that we can determine any unwanted    users in our network.
+ 
+ -  Metricbeat monitors the system for changes to its OS metrics, such as CPU usage but most importantly it helps to     watch our servers and collects data. Proactively monitoring our webservers is fundamentally important to prevent     DDoS attacks.  
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
