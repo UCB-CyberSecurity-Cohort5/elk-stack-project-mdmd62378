@@ -79,8 +79,7 @@ The playbook implements the following tasks:
   - 2nd: Install Python3 compatible programming language used for our project.
   - 3rd: Install the Docker Python module, Installs remaining modules needed to allow docker to work efficiently              using Python.
   - 4th: Download and launch a Docker Elk container, download the Elk stack into our docker container so that we may          use Kibana, Filebeat, Metricbeat.
-
-https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/PlayBook_ELk_Yaml_of.png?raw=true
+ https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/PlayBook/Elk.yml
 ![image](https://user-images.githubusercontent.com/95522338/161465700-a7f4b963-3aaf-4650-b025-c96e8b601c57.png)
 
 
@@ -124,13 +123,20 @@ SSH into the control node and follow the steps below:
 https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/Kibana_http_Test_Success_of.png?raw=true
 ![image](https://user-images.githubusercontent.com/95522338/161467686-0545b4e4-37c3-4891-b3c9-e03b3a91583b.png)
 
+
+
+
 The PlayBook:Elk.yml 
+
+https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/PlayBook_Nano_Elk.ymal_of.png?raw=true
+![image](https://user-images.githubusercontent.com/95522338/161470995-7b06e015-f9c7-42c9-b4b8-cd5fbcb1f685.png)
+
 
 https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/PlayBook_Install_of.png?raw=true
 ![image](https://user-images.githubusercontent.com/95522338/161470518-5ffe8387-c2e9-4611-aeba-3e4a38a72d3a.png)
 
 location: /etc/ansible/roles
-Configurationfile: Host is the configuration file that requires updating a new machine. We made the Elk server its own group with the specific IP address that we wanted to allow group install. 
+Configuration file: Hosts is the configuration file that requires updating a new machine. We made the Elk server its own group with the specific IP address that we wanted to allow group install. 
 
 https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/Configuration_Elk_Add_Server_of.png?raw=true
 ![image](https://user-images.githubusercontent.com/95522338/161470565-7a43f9df-ea2c-412f-a89a-77d37c1c0187.png)
