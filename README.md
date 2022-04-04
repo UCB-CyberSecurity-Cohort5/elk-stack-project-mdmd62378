@@ -79,7 +79,6 @@ The playbook implements the following tasks:
   - 2nd: Install Python3 compatible programming language used for our project.
   - 3rd: Install the Docker Python module, Installs remaining modules needed to allow docker to work efficiently              using Python.
   - 4th: Download and launch a Docker Elk container, download the Elk stack into our docker container so that we may          use Kibana, Filebeat, Metricbeat.
- https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/PlayBook/Elk.yml
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
