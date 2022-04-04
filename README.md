@@ -9,7 +9,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/PlayBook/Elk.yml
 
 This document contains the following details:
 - Description of the Topologu
@@ -74,6 +74,8 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
   - The benefit of using an automation tool such as Ansible is that it excels in the efficiency and accuracy of software implementation by expediting the process to install multiple applications in mass deployment rather than individually installing applications.
 
 The playbook implements the following tasks:
+
+ https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/PlayBook/Elk.yml
 
   - 1st: Install Docker containerization platform of choice for our project. 
   - 2nd: Install Python3 compatible programming language used for our project.
