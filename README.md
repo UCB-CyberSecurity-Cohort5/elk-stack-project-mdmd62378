@@ -80,7 +80,6 @@ The playbook implements the following tasks:
   - 3rd: Install the Docker Python module, Installs remaining modules needed to allow docker to work efficiently              using Python.
   - 4th: Download and launch a Docker Elk container, download the Elk stack into our docker container so that we may          use Kibana, Filebeat, Metricbeat.
  https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/PlayBook/Elk.yml
-![image](https://user-images.githubusercontent.com/95522338/161465700-a7f4b963-3aaf-4650-b025-c96e8b601c57.png)
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -130,6 +129,10 @@ The PlayBook:Elk.yml
 
 https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/PlayBook_Nano_Elk.ymal_of.png?raw=true
 ![image](https://user-images.githubusercontent.com/95522338/161470995-7b06e015-f9c7-42c9-b4b8-cd5fbcb1f685.png)
+
+
+ https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/PlayBook/Elk.yml
+![image](https://user-images.githubusercontent.com/95522338/161465700-a7f4b963-3aaf-4650-b025-c96e8b601c57.png)
 
 
 https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/PlayBook_Install_of.png?raw=true
