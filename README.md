@@ -2,7 +2,9 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![image](https://user-images.githubusercontent.com/95522338/161464985-b7e1a162-7c7b-4282-88bc-c4549a3eb7bf.png)
+
+(https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Diagram/Mission%20Green%20Team%20.drawio.png?raw=true)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
