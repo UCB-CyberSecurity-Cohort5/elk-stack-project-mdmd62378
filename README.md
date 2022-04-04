@@ -135,7 +135,7 @@ https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/ma
 https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/PlayBook_Install_of.png?raw=true
 ![image](https://user-images.githubusercontent.com/95522338/161470518-5ffe8387-c2e9-4611-aeba-3e4a38a72d3a.png)
 
-location: /etc/ansible/roles
+location: /etc/ansible
 Configuration file: Hosts is the configuration file that requires updating a new machine. We made the Elk server its own group with the specific IP address that we wanted to allow group install. 
 
 https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/Configuration_Elk_Add_Server_of.png?raw=true
@@ -148,4 +148,3 @@ Url: curl HTTP://localhost:5601/app/kibana
 
 - https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/PlayBook/Elk.yml
 s
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
