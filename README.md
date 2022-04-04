@@ -2,9 +2,10 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![image](https://user-images.githubusercontent.com/95522338/161464985-b7e1a162-7c7b-4282-88bc-c4549a3eb7bf.png)
 
 (https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Diagram/Mission%20Green%20Team%20.drawio.png?raw=true)
+![image](https://user-images.githubusercontent.com/95522338/161464985-b7e1a162-7c7b-4282-88bc-c4549a3eb7bf.png)
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -79,12 +80,16 @@ The playbook implements the following tasks:
   - 3rd: Install the Docker Python module, Installs remaining modules needed to allow docker to work efficiently              using Python.
   - 4th: Download and launch a Docker Elk container, download the Elk stack into our docker container so that we may          use Kibana, Filebeat, Metricbeat.
 
+https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/PlayBook_ELk_Yaml_of.png?raw=true
 ![image](https://user-images.githubusercontent.com/95522338/161465700-a7f4b963-3aaf-4650-b025-c96e8b601c57.png)
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+
+https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/Docker_Ps_Container_of.png?raw=true
+
+![image](https://user-images.githubusercontent.com/95522338/161467110-9c831fd2-5cce-400c-8790-a807245a82cb.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -114,12 +119,27 @@ SSH into the control node and follow the steps below:
 - Copy the **_Elk.yml_** file to /etc/ansible/roles/
 - Update the **_Host_** file to include the Elk server and its IP Address 10.0.0.4 then specify what we want           installed ansible_python_interpreter=/usr/bin/python3
  
-- Run the playbook, and navigate to HTTP://20.228.157.0:5601 to check that the installation worked as expected.
+- Run the playbook, and navigate to HTTP://20.115.11612:5601 to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/Kibana_http_Test_Success_of.png?raw=true
+![image](https://user-images.githubusercontent.com/95522338/161467686-0545b4e4-37c3-4891-b3c9-e03b3a91583b.png)
+
+The PlayBook:Elk.yml 
+
+https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/PlayBook_Install_of.png?raw=true
+![image](https://user-images.githubusercontent.com/95522338/161470518-5ffe8387-c2e9-4611-aeba-3e4a38a72d3a.png)
+
+location: /etc/ansible/roles
+Configurationfile: Host is the configuration file that requires updating a new machine. We made the Elk server its own group with the specific IP address that we wanted to allow group install. 
+
+https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/Images/Playbook_4/Configuration_Elk_Add_Server_of.png?raw=true
+![image](https://user-images.githubusercontent.com/95522338/161470565-7a43f9df-ea2c-412f-a89a-77d37c1c0187.png)
+
+
+Url: curl HTTP://localhost:5601/app/kibana
+
+![image](https://user-images.githubusercontent.com/95522338/161470175-2209dcb8-56d5-4843-aaa1-f63f59e1a3b6.png)
+
 - https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-mdmd62378/blob/main/PlayBook/Elk.yml
-
+s
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
