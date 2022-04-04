@@ -79,6 +79,8 @@ The playbook implements the following tasks:
   - 3rd: Install the Docker Python module, Installs remaining modules needed to allow docker to work efficiently              using Python.
   - 4th: Download and launch a Docker Elk container, download the Elk stack into our docker container so that we may          use Kibana, Filebeat, Metricbeat.
 
+![image](https://user-images.githubusercontent.com/95522338/161465700-a7f4b963-3aaf-4650-b025-c96e8b601c57.png)
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
